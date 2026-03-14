@@ -6,6 +6,16 @@
 
 @layer base {
   body {
-    @apply font-sans; /* usa a fonte padrão definida no config */
+    @apply font-sans bg-gradient-to-r from-cyan-800 via-cyan-700 to-cyan-800; /* usa a fonte padrão definida no config e o degradê */
+    letter-spacing: 1px; /* espaçamento entre letras */
+  }
+  .sombra {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  nav ul li a {
+    @apply opacity-80 hover:opacity-100 transition-all;
+  }
+  header .redes li a {
+    @apply opacity-80 hover:opacity-100 transition-all text-lg;
   }
 }

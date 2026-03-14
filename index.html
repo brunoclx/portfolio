@@ -3,10 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Bruno Calixto, desenvolvedor web especializado em criar experiências digitais criativas e imersivas.">
+    <meta property="og:title" content="Bruno Calixto - Desenvolvedor Web">
+    <meta property="og:description" content="Portfólio de Bruno Calixto, desenvolvedor web especializado em experiências digitais criativas.">
+    <meta property="og:image" content="URL_da_imagem_de_preview.jpg">
+    <meta property="og:url" content="https://seu-dominio.com">
+    <meta property="og:type" content="website">
+
     <title>Bruno Calixto - Desenvolvedor web</title>
     <link href="assets/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
 </head>
-<body>
-    <h1 class="text-black font-bold">Olá mundo!</h1>
+<body class="h-screen">
+    <header class="py-8 border-b border-white/10">
+        <div class="max-w-screen-xl mx-auto px-4 flex justify-between items-center">
+            <p class="text-3xl text-white sombra"><a href="#">Bruno<span class="font-bold uppercase">Clx</span></a></p>
+            <div class="flex gap-x-6">
+                <nav>
+                    <ul class="flex gap-x-6 text-white">
+                        <li><a href="">Sobre Mim</a></li>
+                        <li><a href="">Habilidades</a></li>
+                        <li><a href="">Projetos</a></li>
+                        <li><a href="">Fale comigo</a></li>
+                    </ul>
+                </nav>   
+                <ul class="redes flex gap-x-6 text-white">
+                    <li><a href="https://github.com/brunoclx" target="_blank" aria-label="GitHub de Bruno Calixto"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/brunoclx/" target="_blank" aria-label="Linkedin de Bruno Calixto"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul> 
+            </div>  
+        </div>        
+    </header>
+    <section id="hero" class="max-w-screen-xl mx-auto px-4 pt-8 grid grid-cols-1 md:grid-cols-[1fr_auto] h-[calc(100vh-6rem)] gap-6">
+        <!-- Texto centralizado -->
+        <div class="flex flex-col justify-center h-full -mt-8 gap-3">
+            <p class="text-cyan-400 uppercase">Olá, eu sou</p>
+            <h1 class="text-5xl md:text-8xl text-white sombra">
+                Bruno<br><span class="font-bold">Calixto</span>
+            </h1>
+            <h2 class="text-cyan-400 font-bold text-3xl md:text-5xl">Desenvolvedor web</h2>
+            <p class="text-white opacity-80 mt-7 max-w-2xl">
+                Unindo criatividade e código para criar experiências digitais imersivas e impecáveis. Vamos transformar suas ideias em realidade.
+            </p>
+            <a href="#contato" class="bg-white text-cyan-900 font-bold px-10 py-3 rounded-full w-fit mt-4 shadow-xl hover:bg-cyan-400 hover:text-white transition-all"
+            role="button" aria-label="Entrar em contato com Bruno Calixto">
+            Fale comigo
+            </a>
+        </div>
+
+        <!-- Imagem alinhada ao bottom e limitada -->
+        <div class="flex items-end h-full">
+            <img src="assets/imagens/bruno-avatar.png"
+                alt="Avatar de Bruno Calixto"
+                class="h-full w-auto object-contain"
+                loading="lazy">
+        </div>
+    </section>
+
+
+
 </body>
 </html>
